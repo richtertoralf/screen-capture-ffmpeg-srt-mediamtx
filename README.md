@@ -33,16 +33,11 @@ Dieses Repository enthält ein Batch-Skript, das deinen Desktop-Bildschirm erfas
 
 ### 2. Skript herunterladen
 
-1. **Repository klonen** oder **ZIP-Datei herunterladen**. Führe den folgenden Befehl in der Eingabeaufforderung aus, um das Repository zu klonen:
+1. **bat-Datei downloaden**. Führe den folgenden Befehl in der Eingabeaufforderung (cmd) aus, um die bat-Datei herunterzuladen:
 
     ```bash
-    git clone https://github.com/DEIN_GITHUB_BENUTZERNAME/DEIN_REPOSITORY.git
-    ```
+    curl -o capture_and_stream.bat https://raw.githubusercontent.com/richtertoralf/screen-capture-ffmpeg-srt-mediamtx/main/capture_and_stream.bat
 
-2. **Wechsel in das Verzeichnis**, das das heruntergeladene Repository enthält:
-
-    ```bash
-    cd DEIN_REPOSITORY
     ```
 
 ## Konfiguration
@@ -80,14 +75,11 @@ Dieses Repository enthält ein Batch-Skript, das deinen Desktop-Bildschirm erfas
     ```bash
     capture_and_stream.bat
     ```
+Alternativ kannst du das Skript auch per Doppelclick im Dateiexplorer starten.
 
 2. Das Skript beginnt mit der Bildschirmaufnahme und streamt die Aufnahme über SRT an den konfigurierten MediaMTX-Server.
 
 ## Häufige Fragen
-
-### Wie kann ich sicherstellen, dass FFmpeg im PATH verfügbar ist?
-
-Wenn der Befehl `ffmpeg` in der Eingabeaufforderung funktioniert, ist FFmpeg korrekt im System-PATH konfiguriert. Andernfalls, stelle sicher, dass die Installation von Winget erfolgreich war und FFmpeg im System-PATH liegt.
 
 ### Wie kann ich die Qualität des Streams anpassen?
 
