@@ -15,6 +15,9 @@ set "STREAM_ID=screen01"
 :: Screen resolution for the capture (e.g., 1920x1080)
 set "VIDEO_RESOLUTION=1920x1080"
 
+:: Framerate for the capture (e.g., 25 fps)
+set "FRAME_RATE=10"
+
 :: Bitrate for the video stream (e.g., 3000k for 3 Mbps)
 set "VIDEO_BITRATE=3000k"
 
@@ -43,7 +46,7 @@ echo ==================== >> %~f0.log
 ping -n 1 %MEDIAMTX_SERVER_IP% >nul || goto endless_loop
 
 :: Start streaming with ffmpeg using the configured parameters
-start /min "ffmpeg %STREAM_ID%" ffmpeg -f gdigrab -framerate 5 -video_size %VIDEO_RESOLUTION% -show_region 1 -i desktop -b:v %VIDEO_BITRATE% -f mpegts %SRT_TARGET%
+start /min "ffmpeg %STREAM_ID%" ffmpeg -f gdigrab -framerate %FRAME_RATE% -video_size %VIDEO_RESOLUTION% -show_region 1 -i desktop -b:v %VIDEO_BITRATE% -f mpegts %SRT_TARGET%
 
 :: Keep the script running in an endless loop (adjust timing as needed)
 ping -n 15 localhost >nul
