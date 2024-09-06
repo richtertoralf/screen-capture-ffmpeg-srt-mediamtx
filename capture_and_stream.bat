@@ -43,7 +43,7 @@ echo ==================== >> %~f0.log
 ping -n 1 %MEDIAMTX_SERVER_IP% >nul || goto endless_loop
 
 :: Start streaming with ffmpeg using the configured parameters
-start /min "ffmpeg %STREAM_ID%" ffmpeg -f gdigrab -framerate 5 -video_size %VIDEO_RESOLUTION% -b:v %VIDEO_BITRATE% -show_region 1 -i desktop -f mpegts %SRT_TARGET%
+start /min "ffmpeg %STREAM_ID%" ffmpeg -f gdigrab -framerate 5 -video_size %VIDEO_RESOLUTION% -show_region 1 -i desktop -b:v %VIDEO_BITRATE% -f mpegts %SRT_TARGET%
 
 :: Keep the script running in an endless loop (adjust timing as needed)
 ping -n 15 localhost >nul
