@@ -119,11 +119,3 @@ Alternativ kannst du das Skript auch per Doppelclick im Dateiexplorer starten.
 ### Wie kann ich die Qualität des Streams anpassen?
 
 Du kannst die Auflösung und Bitrate des Streams im Skript anpassen. Ändere die Werte der Variablen `VIDEO_RESOLUTION` und `VIDEO_BITRATE`, um die gewünschte Qualität einzustellen.
-
-## Beitrag leisten
-
-Wenn du Verbesserungen oder Änderungen an diesem Projekt vorschlagen möchtest, erstelle bitte einen **Pull-Request** oder öffne ein **Issue** auf GitHub. Dein Feedback ist willkommen!
-
-## Lizenz
-
-Dieses Projekt ist unter der **MIT-Lizenz** lizenziert. Siehe die [LICENSE](LICENSE) Datei für Einzelheiten.
