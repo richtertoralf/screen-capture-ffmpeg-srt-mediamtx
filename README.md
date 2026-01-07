@@ -2,12 +2,13 @@
 Ein Windows Batch-Skript zur Bildschirmaufnahme und Übertragung des Streams über SRT mit FFmpeg zum MediaMTX Server.
 
 ```
-Bei vielen Livestreams waren die entscheidenden Informationen nicht im Stream – sondern auf irgendeinem Windows-Rechner vor Ort:
-- Windmessung
-- Ergebnislisten
-- Zielzeit-Software
-- Auswertungsprogramme ohne API
-- alte, geschlossene Systeme
+Bei vielen Livestreams waren die entscheidenden Informationen nicht im Stream
+– sondern auf irgendeinem Windows-Rechner vor Ort:
+ - Windmessung
+ - Ergebnislisten
+ - Zielzeit-Software
+ - Auswertungsprogramme ohne API
+ - alte, geschlossene Systeme
 Keine HDMI-Ausgänge.
 Kein Zugriff auf OBS/vMIX.
 Kein Budget für Capture-Hardware.
