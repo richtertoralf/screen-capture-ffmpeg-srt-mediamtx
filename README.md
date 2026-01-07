@@ -1,6 +1,40 @@
 # screen-capture-ffmpeg-srt-mediamtx
 Ein Windows Batch-Skript zur Bildschirmaufnahme und Übertragung des Streams über SRT mit FFmpeg zum MediaMTX Server.
 
+```
+Bei vielen Livestreams waren die entscheidenden Informationen nicht im Stream – sondern auf irgendeinem Windows-Rechner vor Ort:
+- Windmessung
+- Ergebnislisten
+- Zielzeit-Software
+- Auswertungsprogramme ohne API
+- alte, geschlossene Systeme
+Keine HDMI-Ausgänge.
+Kein Zugriff auf OBS/vMIX.
+Kein Budget für Capture-Hardware.
+
+Nur ein Bildschirm.
+
+Statt teurer Hardware, spezieller Software oder komplizierter Integrationen entstand eine einfache Idee:
+Der Bildschirm selbst wird zur Datenquelle.
+-> Ein kleines Batch-Skript:
+-> nimmt den Desktop auf,
+-> schickt ihn per SRT zu einem MediaMTX-Server,
+und macht ihn dort remote verfügbar.
+
+Im Studio oder in der Cloud konnte der Stream:
+in OBS/vMIX/Grafiksoftware eingebunden, zugeschnitten, maskiert und als Overlay verwendet werden.
+
+Ohne Eingriff in die Quellsoftware.
+Ohne zusätzliche Hardware.
+Ohne jemanden vor Ort.
+
+Was früher nur „lokal sichtbar“ war, wurde plötzlich produktionsfähig.
+
+Dieses Skript hat bei echten Events immer wieder geholfen, wenn keine andere Lösung möglich oder schnell genug war.
+
+Kein Framework. Keine Magie. Nur FFmpeg, SRT – und ein pragmatischer Ansatz, der funktioniert hat.
+```
+
 # Screen Capture to SRT for MediaMTX
 
 ## Übersicht
