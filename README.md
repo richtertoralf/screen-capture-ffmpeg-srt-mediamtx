@@ -1,3 +1,9 @@
+Dieses Repository dokumentiert ein Setup, mit dem Bildschirmaufnahmen unter Windows per ffmpeg erfasst und anschließend über SRT an einen MediaMTX‑Server übertragen werden. Die Batch‑Datei ist bewusst minimalistisch gehalten und diente als zuverlässiges Werkzeug, um Desktop‑Inhalte ohne zusätzliche Software oder komplexe Infrastruktur zu streamen.
+
+Das Script wurde unter anderem bei Skisprung‑Livestreamproduktionen eingesetzt, um Ergebnisgrafiken und Auswertungsfenster direkt vom Auswerte‑ oder Sprecher‑PC an der Schanze in das Studio zu übertragen. Die Kombination aus ffmpeg‑Screen‑Capture, SRT‑Transport und MediaMTX als Ingest‑Server bot eine robuste Möglichkeit, solche Datenströme in Echtzeit in die Produktion einzubinden.
+
+Das Projekt entstand in einer Phase, in der MediaMTX gerade aus rtsp-simple-server hervorging und SRT zunehmend als Alternative zu RTMP an Bedeutung gewann. Ziel war es, die Interoperabilität zwischen ffmpeg‑SRT‑Pipelines und MediaMTX praktisch zu testen und zu verstehen, wie sich solche Workflows in größere Streaming‑Setups integrieren lassen.
+
 # screen-capture-ffmpeg-srt-mediamtx
 Ein Windows Batch-Skript zur Bildschirmaufnahme und Übertragung des Streams über SRT mit FFmpeg zum MediaMTX Server.
 
